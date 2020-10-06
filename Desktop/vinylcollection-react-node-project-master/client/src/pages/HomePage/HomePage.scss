@@ -1,0 +1,40 @@
+.c-homepage {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  &__logo {
+    margin-top: 20%;
+    &__img {
+      max-width: 35%;
+    }
+  }
+
+  &__title {
+    &__text {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__login {
+    margin-top: 6rem;
+    &__registerForm {
+      display: flex;
+      flex-direction: column;
+
+      &__input, &__submit-btn {
+        border: none;
+        width: 73vw;
+        height: 4rem;
+        margin: .75rem 0;
+        border-radius: .3rem;
+      }
+      &__submit-btn {
+        background-color: #fcdab7;
+      }
+      &__input:focus, &__submit-btn:focus {
+        outline: none;
+      }
+    }
+  }
+}
