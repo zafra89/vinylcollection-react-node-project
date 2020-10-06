@@ -1,0 +1,61 @@
+.c-homepage {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  &__logo {
+    margin-top: 15%;
+    &__img {
+      max-width: 35%;
+    }
+  }
+
+  &__title {
+    &__text {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__login {
+    margin-top: 6rem;
+    &__loginForm {
+      display: flex;
+      flex-direction: column;
+
+      &__input, &__submit-btn {
+        font-size: 2.2rem;
+        padding-left: 1rem;
+        border: none;
+        width: 73vw;
+        height: 4rem;
+        margin: .75rem 0;
+        border-radius: .3rem;
+      }
+
+      &__submit-btn {
+        background-color: #fcdab7;
+      }
+      
+      &__input:focus, &__submit-btn:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__register {
+    margin-top: 4rem;
+    &-link {
+      text-decoration: none;
+      color: #fcdab7;
+    }
+  }
+
+  &__author {
+    margin-top: 10rem;
+
+    &-text {
+      font-size: 1.5rem;
+      font-family: 'Montserrat-thin';
+    }
+  }
+}

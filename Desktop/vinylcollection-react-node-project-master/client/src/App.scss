@@ -1,0 +1,34 @@
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~primereact/resources/primereact.min.css";
+@import "~primeicons/primeicons.css";
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Monstserrat'), url('shared/assets/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-extrabold';
+  src: local('Monstserrat'), url('shared/assets/fonts/Montserrat/Montserrat-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-regular';
+  src: local('Monstserrat'), url('shared/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-thin';
+  src: local('Monstserrat'), url('shared/assets/fonts/Montserrat/Montserrat-Thin.ttf') format('truetype');
+}
+
+html {
+  font-size: 8px;
+}
+
+body {
+  font-family: 'Montserrat-extrabold';
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  background-color: #133b5c;
+  color: #fcdab7;
+}
