@@ -3,14 +3,14 @@ import './App.scss';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import HomePage from "./pages/HomePage/HomePage";
-import LoginPage from "./pages/LoginPage/LoginPage";
+import UserMenuPage from './pages/UserMenuPage/UserMenuPage';
 
 function App() {
   return (
       <Router>
           <Switch>
-              <Route path="/login">
-                  <LoginPage/>
+          <Route path="/user-menu">
+                  <UserMenuPage/>
               </Route>
               <Route path="/register">
                   <RegisterPage/>

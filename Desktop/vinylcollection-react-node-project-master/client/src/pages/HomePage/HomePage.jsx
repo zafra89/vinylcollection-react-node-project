@@ -12,7 +12,7 @@ export default function HomePage() {
         API.post('users/login', data).then(res => {
             localStorage.setItem('token', res.data.token);
             if (res.data.logged) {
-                window.location.href = "/"
+                window.location.href = "/user-menu"
             }
         })
             .catch((error) => {
@@ -31,24 +31,27 @@ export default function HomePage() {
                 </h1>
             </div>
             <div className="c-homepage__login">
-                <form onSubmit={handleSubmit(onSubmit)} className="c-homepage__login__registerForm">
+                <form onSubmit={handleSubmit(onSubmit)} className="c-homepage__login__loginForm">
                     <label htmlFor="userName">
-                        <input type="text" className="c-homepage__login__registerForm__input" name="userName" id="userName" placeholder="Username"
+                        <input type="text" className="c-homepage__login__loginForm__input" name="userName" id="userName" placeholder="Username"
                                ref={register({ required: true/*, pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/ */})}/>
                         {errors.userName && <span className="">Username is required</span>}
                     </label>
                     <label htmlFor="password">
-                        <input type="password" className="c-homepage__login__registerForm__input" name="password" id="password" placeholder="Password"
+                        <input type="password" className="c-homepage__login__loginForm__input" name="password" id="password" placeholder="Password"
                                ref={register({ required: true/*, pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/*/})}/>
                         {errors.password && <span className="">Password is required</span>}
                     </label>
                     <div>
-                        <button type="submit" className="c-homepage__login__registerForm__submit-btn">LogIn</button>
+                        <button type="submit" className="c-homepage__login__loginForm__submit-btn">LogIn</button>
                     </div>
                 </form>
             </div>
-            <div>
-                <a href="/register" className="c-homepage__register">Register for free{/*<span className="pi-chevron-right"></span>*/}</a>
+            <div className="c-homepage__register">
+                <a href="/register" className="c-homepage__register-link">Register for free{/*<span className="pi-chevron-right"></span>*/}</a>
+            </div>
+            <div className="c-homepage__author">
+                <p className="c-homepage__author-text">Made by José Luis | 2020</p>
             </div>
         </div>
     )

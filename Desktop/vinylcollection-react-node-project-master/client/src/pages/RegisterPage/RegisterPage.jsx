@@ -19,14 +19,14 @@ export default function RegisterPage() {
         }*/).then(res => {
             console.log(res)
             //localStorage.setItem('token', res.data.token);
-            //window.location.href = "/register-contact";
+            window.location.href = "/";
         })
     };
 
     return (
-        <div>
+        <div className="c-register">
             <form /*action="/users" method="post" encType="multipart/form-data"*/
-                  onSubmit={handleSubmit(onSubmit)} className="" /*ref={refForm}*/>
+                  onSubmit={handleSubmit(onSubmit)} className="c-register__registerForm" /*ref={refForm}*/>
                 {/*<label htmlFor="profileImage" >
                     <div className="">
                         <img className="" src={profImage} alt=""/>
@@ -36,28 +36,28 @@ export default function RegisterPage() {
                     <label htmlFor="file" className="">Upload a profile image</label>
                 </label>*/}
                 <label htmlFor="fullName">
-                    <input type="text" className="" name="fullName" id="fullName" placeholder="Full Name"
-                           ref={register ({ required: true })}/>
+                    <input type="text" className="c-register__registerForm__input" name="fullName" id="fullName" 
+                    placeholder="Full Name" ref={register ({ required: true })}/>
                     {errors.fullName && <span className="">Full name is required</span>}
                 </label>
                 <label htmlFor="userName">
-                    <input type="text" className="" name="userName" id="userName" placeholder="Username"
+                    <input type="text" className="c-register__registerForm__input" name="userName" id="userName" placeholder="Username"
                            ref={register ({ required: true })}/>
                     {errors.userName && <span className="">Username is required</span>}
                 </label>
                 <label htmlFor="email">
-                    <input type="text" className="" name="email" id="email" placeholder="Email"
+                    <input type="text" className="c-register__registerForm__input" name="email" id="email" placeholder="Email"
                            ref={register ({ required: true })}/>
                     {errors.email && <span className="">Email is required</span>}
                 </label>
                 <label htmlFor="password">
-                    <input type="password" className="" name="password" id="password" placeholder="Password"
-                           ref={register({ required: true, pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/})}/>
+                    <input type="password" className="c-register__registerForm__input" name="password" id="password" 
+                    placeholder="Password" ref={register({ required: true, pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/})}/>
                     {errors.password && <span className="">
                         Password must be 8-16 characters and must contains (uppercase and lowercase) letters and numbers
                     </span>}
                 </label>
-                <button type="submit" className="">Submit</button>
+                <button type="submit" className="c-register__registerForm__submit-btn">Submit</button>
             </form>
         </div>
     )
