@@ -1,7 +1,7 @@
 const express = require('express');
 const userRoutes = require('./routes/users');
-/*const vinylRoutes = require('./routes/vinyls');
-const wishlistRoutes = require('./routes/wishlist');*/
+const vinylRoutes = require('./routes/vinyls');
+/*const wishlistRoutes = require('./routes/wishlist');*/
 const cors = require('cors');
 
 require('dotenv').config();
@@ -16,8 +16,8 @@ server.use(express.json());
 server.use(express.urlencoded({extended: false}));
 
 server.use('/users', userRoutes);
-/*server.use('/vinyls', vinylRoutes);
-server.use('/wishlist', wishlistRoutes);*/
+server.use('/vinyls', vinylRoutes);
+/*server.use('/wishlist', wishlistRoutes);*/
 
 
 server.listen(PORT, () => {

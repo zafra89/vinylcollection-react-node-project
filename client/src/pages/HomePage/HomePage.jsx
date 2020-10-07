@@ -35,12 +35,12 @@ export default function HomePage() {
                     <label htmlFor="userName">
                         <input type="text" className="c-homepage__login__loginForm__input" name="userName" id="userName" placeholder="Username"
                                ref={register({ required: true/*, pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/ */})}/>
-                        {errors.userName && <span className="">Username is required</span>}
+                        {errors.userName && <div><span className="c-homepage__login__loginForm__input__spanerror">Fill in Username</span></div>}
                     </label>
                     <label htmlFor="password">
                         <input type="password" className="c-homepage__login__loginForm__input" name="password" id="password" placeholder="Password"
                                ref={register({ required: true/*, pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/*/})}/>
-                        {errors.password && <span className="">Password is required</span>}
+                        {errors.password && <div><span className="c-homepage__login__loginForm__input__spanerror">Fill in Password</span></div>}
                     </label>
                     <div>
                         <button type="submit" className="c-homepage__login__loginForm__submit-btn">LogIn</button>

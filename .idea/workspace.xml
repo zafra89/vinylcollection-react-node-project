@@ -20,40 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0036eb5-ab7f-4ffa-8a22-bc11fff634bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../UpgradeHub/html-css/html-css-sesion-6/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../UpgradeHub/html-css/html-css-sesion-6/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UpgradeHub/html-css/html-css-sesion-6/vista-final-img/bbcnes-mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vinylcollection-react-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vinylcollection-react-project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/App.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/App.test.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/pages/HomePage/HomePage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/pages/HomePage/HomePage.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/pages/LoginPage/LoginPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/pages/LoginPage/LoginPage.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/pages/RegisterPage/RegisterPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/pages/RegisterPage/RegisterPage.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/pages/UserMenuPage/UserMenuPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/pages/UserMenuPage/UserMenuPage.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/pages/WishlistPage/WishlistPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/pages/WishlistPage/WishlistPage.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/shared/components/Navbar/Navbar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-react/src/shared/components/Navbar/Navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/HomePage/HomePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/HomePage/HomePage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/HomePage/HomePage.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middlewares/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middlewares/authentication.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Vinyl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Vinyl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/vinyls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/vinyls.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +54,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/shared/styles" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -87,6 +65,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/shared/styles" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/src/shared/assets" />
       <recent name="$PROJECT_DIR$/client/src/shared/assets/fonts/images" />
@@ -107,6 +88,7 @@
       <workItem from="1601897799317" duration="4392000" />
       <workItem from="1601910238783" duration="14000" />
       <workItem from="1601910299219" duration="9178000" />
+      <workItem from="1601996109056" duration="13891000" />
     </task>
     <servers />
   </component>

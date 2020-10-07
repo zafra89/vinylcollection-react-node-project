@@ -1,18 +1,61 @@
+@mixin mobile {
+  @media only screen and (max-width: 450px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 451px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 1025px) {
+    @content;
+  }
+}
+
 .c-homepage {
   justify-content: center;
   text-align: center;
   align-items: center;
 
   &__logo {
-    margin-top: 15%;
+    margin-top: 20%;
+
+    @include tablet {
+      margin-top: 10%;
+    }
+
+    @include desktop {
+      margin-top: 5%;
+    }
+
     &__img {
       max-width: 35%;
+
+      @include tablet {
+        max-width: 25%;
+      }
+
+      @include desktop {
+        max-width: 17%;
+      }
     }
   }
 
   &__title {
     &__text {
       font-size: 3.5rem;
+
+      @include tablet {
+        font-size: 4.5rem;
+      }
+
+      @include desktop {
+        font-size: 5.5rem;
+      }
     }
   }
 
@@ -22,6 +65,14 @@
       display: flex;
       flex-direction: column;
 
+      &__input {
+        &__spanerror {
+          color: #ff0000;
+          font-family: Montserrat-regular;
+          font-size: 2.2rem;
+        }
+      }
+
       &__input, &__submit-btn {
         font-size: 2.2rem;
         padding-left: 1rem;
@@ -30,10 +81,27 @@
         height: 4rem;
         margin: .75rem 0;
         border-radius: .3rem;
+
+        @include tablet {
+          font-size: 2.3rem;
+          height: 4.2rem;
+          width: 40vw;
+        }
+
+        @include desktop {
+          font-size: 2.5rem;
+          height: 4.5rem;
+          width: 20vw;
+        }
       }
 
       &__submit-btn {
         background-color: #fcdab7;
+      }
+
+      &__submit-btn:hover {
+        cursor: pointer;
+        background-color: #ff922d;
       }
       
       &__input:focus, &__submit-btn:focus {
@@ -45,17 +113,39 @@
   &__register {
     margin-top: 4rem;
     &-link {
+      font-family: 'Montserrat-thin';
+      font-size: 2.2rem;
       text-decoration: none;
       color: #fcdab7;
+
+      @include tablet {
+        font-size: 2.4rem;
+      }
+
+      @include desktop {
+        font-size: 2.8rem;
+      }
     }
   }
 
   &__author {
-    margin-top: 10rem;
+    margin-top: 13rem;
+
+    @include desktop {
+      margin-top: 28rem;
+    }
 
     &-text {
       font-size: 1.5rem;
       font-family: 'Montserrat-thin';
+
+      @include tablet {
+        font-size: 1.7rem;
+      }
+
+      @include desktop {
+        font-size: 2rem;
+      }
     }
   }
 }
