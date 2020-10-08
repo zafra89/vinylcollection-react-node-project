@@ -48,7 +48,7 @@ vinylsRouter.post('/', authenticateJWT, (req, res) => {
     const year = req.body.year
     const genre = req.body.genre
     const cover = req.body.cover
-    const id = req.user.userID;
+    const userID = req.user.userID;
 
     const vinyl = new Vinyl()
 
@@ -57,7 +57,7 @@ vinylsRouter.post('/', authenticateJWT, (req, res) => {
     vinyl.year = year;
     vinyl.genre = genre;
     vinyl.cover = cover;
-    vinyl.user = id;
+    vinyl.user = userID;
 
     vinyl.save()
         .then((newVinyl) => {

@@ -1,0 +1,24 @@
+.c-usermenu {
+  justify-content: center;
+  text-align: center;
+
+  .usermenu-btndiv {
+    margin: 2rem 0 0 0;
+  }
+
+  .usermenu-btn {
+    width: 85%;
+    height: 4.5rem;
+    border: none;
+  }
+
+  .usermenu-btn:hover {
+    cursor: pointer;
+  }
+
+  .usermenu-btn:focus {
+    outline: none;
+  }
+}
+
+

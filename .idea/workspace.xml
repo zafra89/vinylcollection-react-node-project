@@ -22,15 +22,14 @@
     <list default="true" id="a0036eb5-ab7f-4ffa-8a22-bc11fff634bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../UpgradeHub/html-css/html-css-sesion-6/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../UpgradeHub/html-css/html-css-sesion-6/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UpgradeHub/html-css/html-css-sesion-6/vista-final-img/bbcnes-mobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vinylcollection-react-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vinylcollection-react-project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/HomePage/HomePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/HomePage/HomePage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/HomePage/HomePage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Vinyl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Vinyl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/CollectionPage/CollectionPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/CollectionPage/CollectionPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/CollectionPage/CollectionPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/CollectionPage/CollectionPage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/UserMenuPage/UserMenuPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/UserMenuPage/UserMenuPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/UserMenuPage/UserMenuPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/UserMenuPage/UserMenuPage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/shared/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shared/components/PrivateRoute/PrivateRoute.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/shared/components/Navbar/Navbar.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/vinyls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/vinyls.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +87,9 @@
       <workItem from="1601897799317" duration="4392000" />
       <workItem from="1601910238783" duration="14000" />
       <workItem from="1601910299219" duration="9178000" />
-      <workItem from="1601996109056" duration="13891000" />
+      <workItem from="1601996109056" duration="14151000" />
+      <workItem from="1602145540685" duration="466000" />
+      <workItem from="1602163753269" duration="5275000" />
     </task>
     <servers />
   </component>

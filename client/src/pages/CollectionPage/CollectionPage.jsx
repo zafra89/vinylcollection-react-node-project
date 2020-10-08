@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { API } from "../../shared/services/api";
 import './CollectionPage.scss';
+import VinylItem from "../../shared/components/VinylItem/VinylItem";
 
 export default function CollectionPage() {
 
@@ -17,11 +18,7 @@ export default function CollectionPage() {
 
     return(
         <div className="c-mycollection">
-            {myCollection.map((item, i) => <div className="c-mycollection__vinyl" key={i}>
-                <img src={item.cover} className="c-mycollection__vinyl__img" alt=""/>
-                <p className="c-mycollection__vinyl__info">{item.album} - {item.artist} ({item.year})</p>
-                {/*<p>{item.genre}</p>*/}
-            </div>)}
+            {myCollection.map((vinyl, i) => <VinylItem key={i} index={i} info={vinyl}/>)}
         </div>
     )
 }
