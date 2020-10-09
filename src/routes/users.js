@@ -4,30 +4,6 @@ const authenticateJWT = require('../middlewares/authentication');
 const bcrypt = require('bcryptjs');
 const saltRounds = 10;
 const User = require('../models/User');
-/*let multer = require('multer');
-
-const VALID_FILE_TYPES = ['image/png', 'image/jpg'];
-const IMAGES_URL_BASE = "/profileImages";
-
-const fileFilter = (req, file, cb) => {
-    if (!VALID_FILE_TYPES.includes(file.mimetype)) {
-        cb(new Error('Invalid file type'));
-    } else {
-        cb(null, true);
-    }
-}
-
-
-let storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-        cb(null, './public' + IMAGES_URL_BASE)
-    },
-    filename: function (req, file, cb) {
-        cb(null, file.originalname)
-    }
-})
-
-let upload = multer({ storage: storage, fileFilter: fileFilter })*/
 
 const usersRouter = express.Router();
 
@@ -41,13 +17,12 @@ const usersRouter = express.Router();
         })
 });*/
 
-usersRouter.post('/'/*, upload.single('picture')*/, (req, res) => {
+usersRouter.post('/', (req, res) => {
 
     const fullName = req.body.fullName
     const userName = req.body.userName
     const email = req.body.email
     const password = req.body.password
-    //const profileImage = IMAGES_URL_BASE + "/" + req.file.filename
 
 
     bcrypt.hash(password, saltRounds, function (err, hash) {
@@ -57,14 +32,10 @@ usersRouter.post('/'/*, upload.single('picture')*/, (req, res) => {
         user.userName = userName
         user.email = email;
         user.password = hash;
-        //user.profileImage = profileImage;
 
         user.save()
             .then((newUser) => {
-                /*const accessToken = jwt.sign(
-                    { userID: newUser._id, userName: newUser.userName },
-                    process.env.JWT_SECRET);*/
-                return res.json({ /*logged: false, token: accessToken,*/ user: newUser }) /*quitar token????*/
+                return res.json({ user: newUser })
             })
             .catch((error) => {
                 res.status(500).send(error);
@@ -148,49 +119,6 @@ usersRouter.put('/', authenticateJWT, (req, res) => {
             console.log(error)
             res.status(500).send(error);
         })
-});
-
-usersRouter.post('/profileImage', authenticateJWT, upload.single('profileImage'), function (req, res, next) {
-
-    User.findByIdAndUpdate(	req.user.userID,{
-
-        profileImage: IMAGES_URL_BASE + "/" + req.file.filename
-    })
-
-        .then((err, updatedUser) => {
-            if(err){
-                res.status(500).send(err)
-            } else{
-                res.send("Updated profile image")
-            }
-        })
-
-
-    const imageForm = document.getElementById('profileImageForm')
-    imageForm.addEventListener('submit', (e)=> {
-        e.preventDefault()
-        const formData = new formData(imageForm)
-        const userToken = localStorage.getItem('token')
-
-        if (!userToken)
-        {
-            return window.location.href = "/User/login.html";
-        }
-
-        fetch('/users/profileImage', {
-            method: 'POST',
-            body: formData,
-            headers: {
-                "Authorization": "Bearer" + userToken
-            }
-        })
-            .then(res => {
-                console.log(res.status)
-            })
-            .catch(err => {
-                console.log(err)
-            })
-    })
 });*/
 
 module.exports = usersRouter;

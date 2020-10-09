@@ -35,7 +35,7 @@ vinylsRouter.post('/', authenticateJWT, (req, res) => {
 
     vinyl.save()
         .then((newVinyl) => {
-            return res.json({ /*logged: false, token: accessToken,*/ vinyl: newVinyl }) /*quitar token????*/
+            return res.json({ vinyl: newVinyl })
         })
         .catch((error) => {
             res.status(500).send(error);

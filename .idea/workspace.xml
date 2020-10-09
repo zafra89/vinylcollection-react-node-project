@@ -20,17 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0036eb5-ab7f-4ffa-8a22-bc11fff634bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/pages/AddVinylPage/AddVinylPage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/UserProfilePage/UserProfilePage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/UserProfilePage/UserProfilePage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/WishlistFormPage/WishlistFormPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/WishlistFormPage/WishlistFormPage.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UpgradeHub/html-css/html-css-sesion-6/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../UpgradeHub/html-css/html-css-sesion-6/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UpgradeHub/html-css/html-css-sesion-6/vista-final-img/bbcnes-mobile.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/CollectionPage/CollectionPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/CollectionPage/CollectionPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/CollectionPage/CollectionPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/CollectionPage/CollectionPage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/AddVinylPage/AddVinylPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/AddVinylPage/AddVinylPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/RegisterPage/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/RegisterPage/RegisterPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/UserMenuPage/UserMenuPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/UserMenuPage/UserMenuPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/UserMenuPage/UserMenuPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/UserMenuPage/UserMenuPage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/shared/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shared/components/PrivateRoute/PrivateRoute.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/shared/components/Navbar/Navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Wishlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Wishlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/vinyls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/vinyls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/wishlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/wishlist.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +94,9 @@
       <workItem from="1601910299219" duration="9178000" />
       <workItem from="1601996109056" duration="14151000" />
       <workItem from="1602145540685" duration="466000" />
-      <workItem from="1602163753269" duration="5275000" />
+      <workItem from="1602163753269" duration="5483000" />
+      <workItem from="1602233019592" duration="910000" />
+      <workItem from="1602248521387" duration="4992000" />
     </task>
     <servers />
   </component>
