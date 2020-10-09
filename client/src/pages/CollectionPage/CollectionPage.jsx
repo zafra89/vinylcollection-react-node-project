@@ -16,9 +16,21 @@ export default function CollectionPage() {
             });
     }, []);
 
+    const deleteVinyl = (index) => {
+        const vinyl = [...myCollection];
+        vinyl.splice(index, 1);
+        setMyCollection(vinyl);
+
+        API.delete("/vinyls")
+        .then((res) => {
+            console.log(res)
+        })
+    }
+
     return(
         <div className="c-mycollection">
-            {myCollection.map((vinyl, i) => <VinylItem key={i} index={i} info={vinyl}/>)}
+            {myCollection.map((vinyl, i) => <VinylItem key={i} index={i} info={vinyl} 
+            fnDeleteVinyl={deleteVinyl}/>)}
         </div>
     )
 }

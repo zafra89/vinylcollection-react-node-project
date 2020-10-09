@@ -1,43 +1,17 @@
 const express = require('express');
-/*const jwt = require('jsonwebtoken');*/
 const authenticateJWT = require('../middlewares/authentication');
-/*const bcrypt = require('bcryptjs');
-const saltRounds = 10;*/
 const Vinyl = require('../models/Vinyl');
-/*let multer = require('multer');
-
-const VALID_FILE_TYPES = ['image/png', 'image/jpg'];
-const IMAGES_URL_BASE = "/profileImages";
-
-const fileFilter = (req, file, cb) => {
-    if (!VALID_FILE_TYPES.includes(file.mimetype)) {
-        cb(new Error('Invalid file type'));
-    } else {
-        cb(null, true);
-    }
-}
-
-
-let storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-        cb(null, './public' + IMAGES_URL_BASE)
-    },
-    filename: function (req, file, cb) {
-        cb(null, file.originalname)
-    }
-})
-
-let upload = multer({ storage: storage, fileFilter: fileFilter })*/
 
 const vinylsRouter = express.Router();
 
-/*vinylsRouter.get('/', authenticateJWT, (req, res) => {
-    User.find({})
-        .then((vinyl) => {
-            res.send(vinyl);
+/*vinylsRouter.get('/:id', authenticateJWT, (req, res) => {
+    const id = req.params.id;
+    Vinyl.findById(id, { __v: 0, updatedAt: 0, createdAt: 0 })
+        .then((user) => {
+            res.send(user)
         })
         .catch((error) => {
-            res.status(500).send(error);
+            res.status(500).send(error)
         })
 });*/
 
@@ -68,33 +42,6 @@ vinylsRouter.post('/', authenticateJWT, (req, res) => {
         })
 });
 
-/*vinylsRouter.post('/login', (req, res) => {
-    const userName = req.body.userName;
-    const password = req.body.password;
-    User.findOne({ userName: userName })
-        .then((user) => {
-            if (user) {
-                bcrypt.compare(password, user.password, function (err, result) {
-                    if (result) {
-                        const accessToken = jwt.sign(
-                            { userID: user._id, fullName: user.fullName },
-                            process.env.JWT_SECRET);
-                        return res.json({ logged: true, token: accessToken })
-                    }
-                    else {
-                        return res.status(404).json({ logged: false })
-                    }
-                });
-            }
-            else {
-                return res.status(404).json({ logged: false })
-            }
-        })
-        .catch((err) => {
-            return res.status(404).json({ logged: false })
-        })
-});*/
-
 vinylsRouter.get('/mycollection', authenticateJWT, (req, res) => {
     const id = req.user.userID;
     Vinyl.find({'user' : id})
@@ -107,19 +54,19 @@ vinylsRouter.get('/mycollection', authenticateJWT, (req, res) => {
         })
 });
 
-/*vinylsRouter.delete('/:id', (req, res) => {
+vinylsRouter.delete('/:id', (req, res) => {
     const id = req.params.id
 
-    User.findByIdAndDelete(id)
-        .then((deletedUsuario) => {
-            res.send({ mensaje: `se ha borrado correctamente el usuario con id ${id}` });
+    Vinyl.findByIdAndDelete(id)
+        .then((deletedVinyl) => {
+            res.status(200).send(deletedVinyl);
         })
         .catch((error) => {
             res.status(500).send(error);
         })
 });
 
-vinylsRouter.put('/', authenticateJWT, (req, res) => {
+/*vinylsRouter.put('/', authenticateJWT, (req, res) => {
     const id = req.usuario.userID
     let camposActualizar = {};
     //if (req.body.contactoEmergencia){
@@ -145,49 +92,6 @@ vinylsRouter.put('/', authenticateJWT, (req, res) => {
             console.log(error)
             res.status(500).send(error);
         })
-});
-
-vinylsRouter.post('/profileImage', authenticateJWT, upload.single('profileImage'), function (req, res, next) {
-
-    User.findByIdAndUpdate(	req.user.userID,{
-
-        profileImage: IMAGES_URL_BASE + "/" + req.file.filename
-    })
-
-        .then((err, updatedUser) => {
-            if(err){
-                res.status(500).send(err)
-            } else{
-                res.send("Updated profile image")
-            }
-        })
-
-
-    const imageForm = document.getElementById('profileImageForm')
-    imageForm.addEventListener('submit', (e)=> {
-        e.preventDefault()
-        const formData = new formData(imageForm)
-        const userToken = localStorage.getItem('token')
-
-        if (!userToken)
-        {
-            return window.location.href = "/User/login.html";
-        }
-
-        fetch('/users/profileImage', {
-            method: 'POST',
-            body: formData,
-            headers: {
-                "Authorization": "Bearer" + userToken
-            }
-        })
-            .then(res => {
-                console.log(res.status)
-            })
-            .catch(err => {
-                console.log(err)
-            })
-    })
 });*/
 
 module.exports = vinylsRouter;
